@@ -1,15 +1,60 @@
-body {
-  background-color: white;
+html {
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+  left: 0;
+  right: 0;
 }
 
-.container {
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.45em;
+}
+
+button {
+  font-size: 1em;
+  padding: 0.25em 1em;
+  border: 1px solid black;
+  border-radius: 3%;
+  transition: 0.3s;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.buttons {
+  text-align: center;
+  margin: auto;
+}
+
+.tan {
+  background: bisque !important;
+}
+
+.grey {
+  background: #DDDDDD !important;
+}
+
+#container {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 10;
-  padding: 10px;
-  background: white;
+  background: black;
+  color: white;
+  padding: 0 10px;
   max-height: 65px;
 }
 
@@ -24,6 +69,14 @@ span {
   color: red;
 }
 
+#bio {
+  height: 85vh;
+}
+
+#itme {
+  margin-top: -10px;
+}
+
 #links {
   width: 30%;
   display: flex;
@@ -31,7 +84,7 @@ span {
 }
 
 #links a {
-  color: black;
+  color: white;
   text-decoration: none;
   transition: 0.3s;
   font-size: 17px;
@@ -43,23 +96,65 @@ span {
   font-size: 20px;
 }
 
-#projects {
-  background: grey;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0px;
-  text-align: center;
+section {
+  width: 100%;
 }
 
-#bio {
+.side {
   position: sticky;
   position: -webkit-sticky;
   top: 95px;
+  margin: auto;
+}
+
+.full {
+  height: 50vh;
+}
+
+#top {
+  position: absolute;
+  top: -30px;
+}
+
+#projects {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  padding-top: 10px;
+  background: black;
+  transition: 0.2s;
+}
+
+#project-header {
+  max-width: 900px;
+  margin: auto;
+}
+
+
+#project2 {
+  background: grey;
+  transition: 0.1s;
+}
+
+#project3 {
+  background: burlywood;
+}
+
+.page {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 142px;
+  height: 75vh;
+}
+
+.title {
+  display: block;
+  text-align: center;
 }
 
 ul {
   display: flex;
-  margin: 10 0;
+  margin: auto;
 }
 
 .skills li {
@@ -72,14 +167,49 @@ img {
   max-width: 75%;
 }
 
-.page {
-  margin: auto;
-  max-width: 900px;
+i {
+  font-size: 30px;
 }
 
 .inner {
+  max-width: 80%;
   display: flex;
   justify-content: space-between;
+  margin: auto;
+}
+
+.mid {
+  text-align: center;
+}
+
+.down-button {
+  animation: pulse 1s infinite;
+  background: black;
+  color: white;
+  border: none;
+  bottom: 15px;
+  position: absolute;
+}
+
+@keyframes pulse {
+  0% {
+    bottom: 15px;
+  }
+
+  100% {
+    bottom: 25px;
+  }
+}
+
+.project-inner {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+}
+
+#contact-list {
+  max-width: 900px;
+  margin: auto;
 }
 
 main {
@@ -87,5 +217,33 @@ main {
 }
 
 footer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   text-align: center;
+  margin: auto;
+}
+
+.icon {
+  margin: 0px 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.changePurple {
+  background: #E85A4F !important;
+}
+
+.changePurple button {
+  background: #E98074;
+}
+
+.changeGrey {
+  background: grey !important;
+}
+
+.changeWood {
+  background: burlywood !important;
 }
