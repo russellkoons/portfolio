@@ -6,12 +6,15 @@
   <title>Russell Koons Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script src="index.js"></script>
 </head>
 <body>
-  <header role="banner">
-    <div>
-      <h2>Russell Koons</h2>
+  <header role="banner" class="container">
+    <div class="inner-nav">
+      <div>
+        <h2>Russell Koons</h2>
+      </div>
       <div id="links">
         <a href="#bio">About</a>
         <a href="#projects">Projects</a>
@@ -20,35 +23,130 @@
     </div>
   </header>
   <main>
-    <section id="bio">
-      <h1>Russell Koons Web Developer</h1>
-      <img src="assets/russellkoons.jpg" alt="Russell Koons" />
-      <p>My name is Russell Koons and I'm a full stack developer based in Atlanta, Georgia.</p>
-      <p>I'm a recent graduate of the Thinkful Full Stack Flex program with a passion for building exciting and interesting web apps. As a new developer I find great satisfaction in being able to bring my ideas to life on the screen.</p>
-      <p>When I'm not working you can find me reading a book, at a concert, or just spending time in the great outdoors.</p>
+    <section id="bio" class="page">
+      <div class="inner">
+        <div>
+          <img src="assets/russellkoons.jpg" alt="Russell Koons" />
+        </div>
+        <div>
+          <p>My name is <span>Russell Koons</span> and I'm a full stack developer based in Atlanta, Georgia.</p>
+          <p>I'm a recent graduate of the Thinkful Full Stack Flex program with a passion for building exciting and interesting web apps. As a new developer I find great satisfaction in being able to bring my ideas to life on the screen.</p>
+          <p>When I'm not working you can find me reading a book, at a concert, or just spending time in the great outdoors.</p>
+          <a href="mailto:rkoons@gmail.com">Get in touch!</a>
+        </div>
+      </div>  
     </section>
-    <section id="projects">
+    <section id="projects" class="page">
       <h2>My Projects</h2>
       <div>
         <h3>Plantry</h3>
         <img src="assets/plantry.png" alt="Plantry" />
+        <div>
+          <a href="https://plantry-client.herokuapp.com">Live App</a> | <a href="https://github.com/russellkoons/plantry-client">Github Repo</a>
+        </div>
         <p>An app to streamline meal planning and make quick grocery lists based on your plans.</p>
+        <p>Built with:</p>
+        <ul class="skills">
+          <li>
+            <i class="devicon-react-original colored"></i>
+            <aside>React</aside>
+          </li>
+          <li>
+            <i class="devicon-nodejs-plain colored"></i>
+            <aside>Node.js</aside>
+          </li>
+          <li>
+            <i class="devicon-express-original colored"></i>
+            <aside>Express</aside>
+          </li>
+          <li>
+            <i class="devicon-postgresql-plain colored"></i>
+            <aside>PostgreSQL</aside>
+          </li>
+          <li>
+            <i class="devicon-html5-plain colored"></i>
+            <aside>HTML5</aside>
+          </li>
+          <li>
+            <i class="devicon-css3-plain colored"></i>
+            <aside>CSS</aside>
+          </li>
+          <li>
+            <i class="devicon-javascript-plain colored"></i>
+            <aside>JavaScript</aside>
+          </li>
+        </ul>  
       </div>
       <div>
         <h3>trainingspotter</h3>
         <img src="assets/trainingspotter.png" alt="trainingspotter" />
+        <div>
+          <a href="https://trainingspotter.herokuapp.com">Live App</a> | <a href="https://github.com/russellkoons/trainingspotter">Github Repo</a>
+        </div>
         <p>Keep track of your weightlifting routines.</p>
+        <p>Built with:</p>
+        <ul class="skills">
+          <li>
+            <i class="devicon-nodejs-plain colored"></i>
+            <aside>Node.js</aside>
+          </li>
+          <li>
+            <i class="devicon-express-original colored"></i>
+            <aside>Express</aside>
+          </li>
+          <li>
+            <i class="devicon-mongodb-plain colored"></i>
+            <aside>mongoDB</aside>
+          </li>
+          <li>
+            <i class="devicon-html5-plain colored"></i>
+            <aside>HTML5</aside>
+          </li>
+          <li>
+            <i class="devicon-css3-plain colored"></i>
+            <aside>CSS</aside>
+          </li>
+          <li>
+            <i class="devicon-javascript-plain colored"></i>
+            <aside>JavaScript</aside>
+          </li>
+          <li>
+            <i class="devicon-jquery-plain colored"></i>
+            <aside>jQuery</aside>
+          </li>
+        </ul>  
       </div>
       <div>
         <h3>genre-ha!</h3>
         <img src="assets/genre-ha.png" alt="genre-ha!" />
+        <div>
+          <a href="https://russellkoons.github.io/genre-ha">Live App</a> | <a href="https://github.com/russellkoons/genre-ha">Github Repo</a>
+        </div>
         <p>Discover new artists from your favorite music genres.</p>
+        <p>Built with:</p>
+        <ul class="skills">
+          <li>
+            <i class="devicon-html5-plain colored"></i>
+            <aside>HTML5</aside>
+          </li>
+          <li>
+            <i class="devicon-css3-plain colored"></i>
+            <aside>CSS</aside>
+          </li>
+          <li>
+            <i class="devicon-javascript-plain colored"></i>
+            <aside>JavaScript</aside>
+          </li>
+          <li>
+            <i class="devicon-jquery-plain colored"></i>
+            <aside>jQuery</aside>
+          </li>
+        </ul>
       </div>
     </section>
-    <section id="contact">
-      <h2>Contact Me!</h2>
+    <section id="contact" class="page">
       <p>Email: <a href="mailto:rkoons@gmail.com">rkoons@gmail.com</a></p>
-      <p>Call: (678) 860-0937</p>
+      <p>Call: <a href="tel:6788600937">(678) 860-0937</a></p>
     </section>
   </main>
   <footer role="contentinfo">
