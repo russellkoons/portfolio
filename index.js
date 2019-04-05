@@ -5,7 +5,7 @@ $(function() {
     if ($(this).scrollTop() > 50 && $(this).scrollTop() < 1000) {
       $('#projects').addClass('changePurple');
     } 
-    if ($(this).scrollTop() > 950 && $(this).scrollTop() < 1530) {
+    if ($('#project2').scrollTop() > 950 && $(this).scrollTop() < 1530) {
       $('#projects').removeClass('changePurple');
       $('#projects').addClass('changeGrey');
     }

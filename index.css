@@ -244,6 +244,14 @@ footer {
   background: grey !important;
 }
 
+.changeGrey button {
+  background: #DDDDDD;
+}
+
 .changeWood {
   background: burlywood !important;
+}
+
+.changeWood button {
+  background: bisque !important;
 }
