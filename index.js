@@ -2,9 +2,10 @@
 
 $(function() {
   $(window).scroll(function () {
-    const plantry = $('#project1').offset().top - 85;
-    const training = $('#project2').offset().top - 85;
-    const genre = $('#project3').offset().top - 85;
+    const hgt = $('#container').height();
+    const plantry = $('#project1').offset().top - hgt;
+    const training = $('#project2').offset().top - hgt;
+    const genre = $('#project3').offset().top - hgt;
 
     if ($(this).scrollTop() > plantry) {
       $('#container').addClass('changepurple');
