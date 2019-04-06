@@ -1,9 +1,6 @@
-* {
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
   width: 100%;
   background: black;
   color: white;
@@ -79,6 +76,7 @@ ul {
   justify-content: space-between;
   margin: auto;
   max-width: 450px;
+  padding: 0;
 }
 
 #aboutme {
