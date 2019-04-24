@@ -111,19 +111,6 @@ ul {
 #getintouch {
   display: block;
   margin: auto;
-  background: black;
-  color: white;
-  border: 2px solid white;
-}
-
-#getintouch:hover {
-  background: white;
-  color: black;
-}
-
-#getintouch a { 
-  color: inherit;
-  text-decoration: none;
 }
 
 #hamburger {
@@ -182,9 +169,29 @@ ul {
   color: black;
 }
 
+#project4 {
+  background: black;
+}
+
 #top {
   position: absolute;
   top: -30px;
+}
+
+.black {
+  background: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.black:hover {
+  background: white;
+  color: black;
+}
+
+.black a { 
+  color: inherit;
+  text-decoration: none;
 }
 
 .built {
