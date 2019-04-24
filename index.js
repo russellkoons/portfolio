@@ -9,12 +9,12 @@ $(function() {
     const portfolio = $('#project4').offset().top - hgt;
 
     if ($(this).scrollTop() < plantry) {
-      $('#container').removeClass('changepurple').removeClass('changegrey');
-      $('#hambutton').removeClass('changepurple').removeClass('changegrey');
+      $('#container').removeClass('changepurple').removeClass('changegrey').removeClass('changewood');
+      $('#hambutton').removeClass('changepurple').removeClass('changegrey').removeClass('changewood');
     }
     if ($(this).scrollTop() > plantry && $(this).scrollTop() < training) {
-      $('#container').removeClass('changegrey');
-      $('#hambutton').removeClass('changegrey');
+      $('#container').removeClass('changegrey').removeClass('changewood');
+      $('#hambutton').removeClass('changegrey').removeClass('changewood');
       $('#container').addClass('changepurple');
       $('#hambutton').addClass('changepurple');
     } 
@@ -25,14 +25,14 @@ $(function() {
       $('#hambutton').addClass('changegrey');
     }
     if ($(this).scrollTop() > genre && $(this).scrollTop() < portfolio) {
-      $('#container').removeClass('changegrey');
-      $('#hambutton').removeClass('changegrey');
+      $('#container').removeClass('changegrey').removeClass('changepurple');
+      $('#hambutton').removeClass('changegrey').removeClass('changepurple');
       $('#container').addClass('changewood');
       $('#hambutton').addClass('changewood');
     }
     if ($(this).scrollTop() > portfolio) {
-      $('#container').removeClass('changewood');
-      $('#hambutton').removeClass('changewood');
+      $('#container').removeClass('changepurple').removeClass('changegrey').removeClass('changewood');
+      $('#hambutton').removeClass('changepurple').removeClass('changegrey').removeClass('changewood');
     }
   });
 });
