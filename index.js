@@ -9,8 +9,8 @@ $(function() {
     const portfolio = $('#project4').offset().top - hgt;
 
     if ($(this).scrollTop() < plantry) {
-      $('#container').removeClass('changepurple');
-      $('#hambutton').removeClass('changepurple');
+      $('#container').removeClass('changepurple').removeClass('changegrey');
+      $('#hambutton').removeClass('changepurple').removeClass('changegrey');
     }
     if ($(this).scrollTop() > plantry && $(this).scrollTop() < training) {
       $('#container').removeClass('changegrey');
