@@ -9,30 +9,24 @@ $(function() {
     const portfolio = $('#project4').offset().top - hgt;
 
     if ($(this).scrollTop() < plantry) {
-      $('#container').removeClass('changepurple').removeClass('changegrey').removeClass('changewood');
-      $('#hambutton').removeClass('changepurple').removeClass('changegrey').removeClass('changewood');
+      $('#container').removeClass('changepurple changegrey changewood');
+      $('#hambutton').removeClass('changepurple changegrey changewood');
     }
     if ($(this).scrollTop() > plantry && $(this).scrollTop() < training) {
-      $('#container').removeClass('changegrey').removeClass('changewood');
-      $('#hambutton').removeClass('changegrey').removeClass('changewood');
-      $('#container').addClass('changepurple');
-      $('#hambutton').addClass('changepurple');
+      $('#container').removeClass('changegrey changewood').addClass('changepurple');
+      $('#hambutton').removeClass('changegrey changewood').addClass('changepurple');
     } 
     if ($(this).scrollTop() > training && $(this).scrollTop() < genre) {
-      $('#container').removeClass('changepurple').removeClass('changewood');
-      $('#hambutton').removeClass('changepurple').removeClass('changewood');
-      $('#container').addClass('changegrey');
-      $('#hambutton').addClass('changegrey');
+      $('#container').removeClass('changepurple changewood').addClass('changegrey');
+      $('#hambutton').removeClass('changepurple changewood').addClass('changegrey');
     }
     if ($(this).scrollTop() > genre && $(this).scrollTop() < portfolio) {
-      $('#container').removeClass('changegrey').removeClass('changepurple');
-      $('#hambutton').removeClass('changegrey').removeClass('changepurple');
-      $('#container').addClass('changewood');
-      $('#hambutton').addClass('changewood');
+      $('#container').removeClass('changegrey changepurple').addClass('changewood');
+      $('#hambutton').removeClass('changegrey changepurple').addClass('changewood');
     }
     if ($(this).scrollTop() > portfolio) {
-      $('#container').removeClass('changepurple').removeClass('changegrey').removeClass('changewood');
-      $('#hambutton').removeClass('changepurple').removeClass('changegrey').removeClass('changewood');
+      $('#container').removeClass('changepurple changegrey changewood');
+      $('#hambutton').removeClass('changepurple changegrey changewood');
     }
   });
 });
