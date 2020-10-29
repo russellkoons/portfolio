@@ -9,24 +9,19 @@ $(function() {
     const portfolio = $('#project4').offset().top - hgt;
 
     if ($(this).scrollTop() < plantry) {
-      $('#container').removeClass('changepurple changegrey changewood');
-      $('#hambutton').removeClass('changepurple changegrey changewood');
+      $('#container, #hambutton').removeClass('changepurple changegrey changewood');
     }
     if ($(this).scrollTop() > plantry && $(this).scrollTop() < training) {
-      $('#container').removeClass('changegrey changewood').addClass('changepurple');
-      $('#hambutton').removeClass('changegrey changewood').addClass('changepurple');
+      $('#container, #hambutton').removeClass('changegrey changewood').addClass('changepurple');
     } 
     if ($(this).scrollTop() > training && $(this).scrollTop() < genre) {
-      $('#container').removeClass('changepurple changewood').addClass('changegrey');
-      $('#hambutton').removeClass('changepurple changewood').addClass('changegrey');
+      $('#container, #hambutton').removeClass('changepurple changewood').addClass('changegrey');
     }
     if ($(this).scrollTop() > genre && $(this).scrollTop() < portfolio) {
-      $('#container').removeClass('changegrey changepurple').addClass('changewood');
-      $('#hambutton').removeClass('changegrey changepurple').addClass('changewood');
+      $('#container, #hambutton').removeClass('changegrey changepurple').addClass('changewood');
     }
     if ($(this).scrollTop() > portfolio) {
-      $('#container').removeClass('changepurple changegrey changewood');
-      $('#hambutton').removeClass('changepurple changegrey changewood');
+      $('#container, #hambutton').removeClass('changepurple changegrey changewood');
     }
   });
 });
